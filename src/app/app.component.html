@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<h2>{{title | uppercase}}</h2>
+<h2>{{title | lowercase}}</h2>
+<h2>{{title | titlecase}}</h2>
+<h2>{{todayDate}}</h2>
+<h2>{{todayDate | date}}</h2>
+<h2>{{todayDate | date : "fullDate"}}</h2>
+<!-- Advanced Pipes -->
+<h2>{{title | slice : 2:7}}</h2>
+<!-- Using Multiple Pipes -->
+<h2>{{title | slice : 2:7 | uppercase}}</h2>
+<h2>{{user}}</h2>
+<h2>{{user | json}}</h2>
+<!-- Get a proprty from json object -->
+<h2>{{user.name | json}}</h2>
+<!-- number Pipe -->
+<h2>{{002.3600 | number : '1.2-3'}}</h2>
+<!-- currency Pipe -->
+<h2>{{3600 | currency}}</h2>
+<h2>{{3600 | currency : "INR"}}</h2>
+<!-- Custom Pipe -->
+
+<h2>INR. {{100 | myPipe}}</h2>
+
+<h2>USD. {{100 | myPipe : 70}}</h2>
